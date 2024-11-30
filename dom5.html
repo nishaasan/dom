@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Document1</h1>
+    <ul id="nav">
+      <li>home</li>
+      <li>about</li>
+      <li>contact</li>
+    </ul>
+    <div id="div1">Element1</div>
+
+    <script>
+      //   const ref = document.getElementById("div1");
+      //   ref.after("reference element.");
+      //   ref.append("added");
+      //   const Para1 = document.createElement("p");
+      //   Para1.textContent = "new paragraph.";
+      //   ref.append(Para1);
+      //   const heading = document.createElement("h2");
+      //   heading.textContent = "Title";
+      //   ref.prepend(heading);
+
+      //   const div = document.querySelector("#div1");
+        const heading2 = document.createElement("h3");
+        heading2.textContent = "Site Navigation";
+      //   div.before(heading2);
+
+      //   div.insertAdjacentHTML("beforebegin", "<h6>before</h6>");
+      //   div.insertAdjacentHTML("beforeend", "<h6>...after refernece</h6>");
+      const ul = document.getElementById("nav");
+      const newListItem = document.createElement("li");
+      newListItem.textContent = "News";
+      ul.appendChild(newListItem);
+      ul.replaceChild(heading2, newListItem);
+
+      //clonenode
+      //   const clone = heading2.cloneNode(true);
+      //   clone.textContent = "cloned title";
+      //   ref.after(clone);
+    </script>
+  </body>
+</html>

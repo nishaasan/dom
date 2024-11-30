@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1">heading1</h1>
+    <div><!---parent odes-->
+    <p>para1</p><!---child node-->
+    <p class="p1">para2</p>
+    <p class="p1">para3</p>
+
+    <p>para3</p>
+    <p>para4</p>
+    </div>
+    <div id="div2">
+      <p class="para2">para2</p>
+      <p class="para2">para2</p>
+      <p class="para2">para2</p>
+
+    </div>
+    <input type="text" name="text1" value="id1">
+    <input type="text" name="text1" value="id2">
+  </div>
+    <script>
+      //dom and nodes
+      //html document--dom
+      //head,title, h1,p are nodes--element nodes
+      //text, input are element nodes
+      //text nodes have no child nodes, but element nodes have child nodes
+      //getElementById, getElementsByName, getElementsByTagName, getElementsByClassName are used to select nodes based on their id, name, tag name, and class name respectively
+      //getElementById returns a single node
+      //getElementsByName returns a collection of nodes
+      //getElementsByTagName returns a collection of nodes
+      //getElementsByClassName returns a collection of nodes
+
+      //example usage:
+      //var a=document.getElementById("h1");
+      //console.log(a); //logs the heading1 node
+      //var b=document.getElementsByName("text1");
+      //console.log(b); //logs a collection of nodes with name="text1"
+      //var c=document.getElementsByTagName("p");
+      //console.log(c); //logs a collection of p nodes
+      //var d=document.getElementsByClassName("p1");
+
+      var a=document.getElementById("h1");
+      console.log(a);
+      var b=document.getElementsByName("text1");
+      console.log(b);
+      var c=document.getElementsByTagName("p");
+      console.log(c);
+      var d=document.getElementsByClassName("p1");
+      console.log(d);
+      var cont=document.getElementById("div2");
+      console.log(cont);
+      var paras=cont.getElementsByClassName("para2")
+      console.log(paras);
+      //queryselector--add css selector
+      var e=document.querySelector("#h1");
+      console.log(e);
+      var f=document.querySelector(".p1");
+      console.log(f);
+      var g=document.querySelectorAll(".p1");
+      console.log(g);
+      let h=document.querySelector("div,h1");
+      console.log(h);    
+ 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <script>
+        div1=document.createElement("div");
+        console.log(div1);
+        div1.innerHTML="<h1>Welcome</h1>";
+        document.body.appendChild(div1);
+        div1.id="title11";
+        console.log(div1);
+
+
+
+
+
+        //appendchild
+        var ul=document.getElementById("nav");
+        var li=document.createElement("li");
+        li.innerHTML="News";
+        ul.appendChild(li);
+
+        //textcontent
+        console.log(ul.textContent);
+
+
+
+
+    </script>
+</body>
+</html>
